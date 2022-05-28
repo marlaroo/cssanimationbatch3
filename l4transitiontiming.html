@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transition Timing function</title>
+		<style type="text/css">
+				.conatiner{
+					width:1000px;
+					background:gray;
+				}
+				.move{
+					width: 150px;
+					height: 50px;
+					background: red;
+					color:#fff;
+					font-size: 20px;
+
+					text-align: center;
+					line-height: 50px;
+					margin:20px 0;
+
+					transition-properties:transform;
+					transition-duration:1s;
+				}
+				.move:hover{
+					transform:translate(700px);
+				}
+				#ease{
+						transition-timing-function:ease;
+				}
+				#ease-in{
+						transition-timing-function:ease-in;
+
+				}
+				#ease-out{
+						transition-timing-function:ease-out;
+
+				}
+				#ease-in-out{
+						transition-timing-function:ease-in-out;
+
+				}
+				#linear{
+						transition-timing-function:linear;
+
+				}
+				#Cubic-bezier{						/*cubicbezier(p0,p1,p2,p3)  O to 1*/
+						transition-timing-function:cubicbezier(1,0.5,1,0.5);
+
+				}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="ease" class="move">Ease</div>
+		</div>
+		<div class="container">
+			<div id="ease-in" class="move">EaseIn</div>
+		</div>
+		<div class="container">
+			<div id="ease-out" class="move">EaseOut</div>
+		</div>
+		<div class="container">
+			<div id="ease-in-out" class="move">EaseInOut</div>
+		</div>
+		<div class="container">
+			<div id="linear" class="move">Linear</div>
+		</div>
+		<div class="container">
+			<div id="Cubic-vezier" class="move">Cubic-Vezier</div>
+		</div>
+		
+
+		
+	</body>
+</html>
+
+
+<!-- ease:     slow.....faster.....slow
+ease-in:   slow......fast
+ease-out:    fast........slow
+ease-in-out;    slow.......fast.....slow
+linear:   same rate.....
+cubic-Bezier -->

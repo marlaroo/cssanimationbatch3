@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transform Rotate</title>
+		<style type="text/css">
+			.container{
+				width: 1000px;
+				background: gray;
+			}
+			.container .move{
+				width: 150px;
+				height: 50px;
+				background: red;
+				color:#fff;
+				font-size: 20px;
+				margin: 20px 0;
+
+				text-align: center;
+				line-height: 50px;
+			}
+			#rotate:hover{
+						/*rotate(angle)*/
+				transform:rotate(45deg);
+				transform:rotate(-45deg);
+				transform:rotate(90deg);
+				transform:rotate(180deg);
+
+			}
+			#rotatex:hover{
+						/*rotateX(angle for X)*/
+				transform:rotateX(45deg);
+				transform:rotateX(-45deg);
+				transform:rotateX(90deg);
+				transform:rotateX(180deg);
+
+			}
+			#rotatey:hover{
+						/*rotateY(angle for y)*/
+				transform:rotateY(45deg);
+				transform:rotateY(-45deg);
+				transform:rotateY(90deg);
+				transform:rotateY(180deg);
+
+			}
+			img{
+				width: 300px;
+
+				display: block;
+				margin:auto;
+
+				transition:transform 2s;
+
+			}
+			img:hover{
+				transform:rotate(45deg);
+				transform:rotate(-45deg);
+				transform:rotate(90deg);
+				transform:rotate(360deg);
+				transform:rotate(1turn);  /*1turn = 360deg*/
+				transform:rotate(1.5turn);  /*1turn = 360deg*/
+				transform:rotate(0.5turn);  /*1turn = 360deg*/
+
+				/*400grad = 360deg*/
+				transform:rotate(400grad);
+				transform:rotate(-200grad);
+
+				transform:rotateX(45deg);
+				transform:rotateX(-45deg);
+				transform:rotateX(90deg);
+
+				transform:rotateY(45deg);
+				transform:rotateY(-45deg);
+				transform:rotateY(90deg);
+
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="rotate" class="move">Rotate Me</div>
+		</div>
+		<div class="container">
+			<div id="rotatex" class="move">Rotate X</div>
+		</div>
+		<div class="container">
+			<div id="rotatey" class="move">Rotate Y</div>
+		</div>
+
+		<hr/>
+		<div>
+			<img src="./img/dog.jpg" alt="dog">
+		</div>
+
+	</body>
+</html>
+
+<!-- rotate 3types
+rotate(xy)
+rotateX()
+rotateY() -->
+
+<!-- 8RT -->

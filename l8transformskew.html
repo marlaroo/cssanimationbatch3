@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Transform skew</title>
+		<style type="text/css">
+			.container{
+				width: 1000px;
+				background: grey;
+			}
+			.container .square{
+				width:150px;
+				height: 60px;
+				background: red;
+				color: #fff;
+				font-size: 20px;
+				padding: 10px 0;
+				margin:20px 0;
+
+				text-align: center;
+				line-height: 60px;
+			}
+			#skew:hover{
+				/*skew(xy)*/
+				transform:skew(45deg);
+				transform:skew(-45deg);
+				transform:skew(90deg);
+
+			}
+			#skewxy:hover{
+
+			}
+			#skewx:hover{
+
+			}
+			#skewy:hover{
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="skew" class="square">Skew Me</div>	
+		</div>
+		<div class="container">
+			<div id="skewxy" class="square">Skew XY</div>	
+		</div>
+		<div class="container">
+			<div id="skewx" class="square">Skew X</div>	
+		</div>
+		<div class="container">
+			<div id="skewy" class="square">Skew Y</div>	
+		</div>
+	</body>
+</html>
